@@ -1,0 +1,25 @@
+/* .app__header {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+} */
+
+.app__header-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13.2326px;
+  filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
+}
+
+.app__header-img img {
+  width: 165.63px;
+  height: 292px;
+}
