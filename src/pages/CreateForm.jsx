@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Input, InputLabel } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const CreateForm = () => {
+  const defaultFormData = {
+    eventName: "",
+    startDate: "",
+    endDate: "",
+    hostName: "",
+    eventAddress: "",
+    eventPhoto: "",
+  };
+
+  const [formData, setFormData] = useState(defaultFormData);
+
   return (
     <div>
-    <br />
-    <h1>Enter event info here</h1>
-    <br />
+      <br />
+      <h1>Enter event info here</h1>
+      <br />
       <form>
         <InputLabel>
           Event name:
@@ -22,8 +33,8 @@ const CreateForm = () => {
         </InputLabel>
         <br />
         <InputLabel>
-        End: <br />
-          <Input type="date"/>
+          End: <br />
+          <Input type="date" />
         </InputLabel>
         <br />
         <InputLabel>
@@ -37,9 +48,9 @@ const CreateForm = () => {
           <Input type="text"> </Input>
         </InputLabel>
         <br />
-        <InputLabel htmlFor="fileInput" >
+        <InputLabel htmlFor="fileInput">
           Event photo <br />
-          <Input type="file" ></Input>
+          <Input type="file"></Input>
         </InputLabel>
         <Link to="/Event">
           <button className="custom__button">NEXT</button>
