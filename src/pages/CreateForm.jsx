@@ -8,30 +8,31 @@ const CreateForm = () => {
       <form>
         <InputLabel>
           {" "}
-          type of event
+          Event name:
           <Input type="text" />
         </InputLabel>
+
         <br />
         <InputLabel>
           {" "}
-          when?
+          Start and End
           <Input type="date" />
         </InputLabel>
         <br />
         <InputLabel>
           {" "}
-          Hosted by:
+          Host name:
           <Input type="text" />
         </InputLabel>
         <br />
         <InputLabel>
-          Street name
+          Location
           <Input> </Input>
         </InputLabel>
         <br />
         <InputLabel>
-          Suburb, State and Postcode
-          <Input></Input>
+          Event photo
+          <Input type="file"></Input>
         </InputLabel>
         <Link to="/Event">
           <button className="custom__button">NEXT</button>
