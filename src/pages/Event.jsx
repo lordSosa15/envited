@@ -10,6 +10,7 @@ const Event = () => {
       <img src={images.event} alt="" />
       <h3>Birthday Bash</h3>
       <p>Hosted by Elysia</p>
+      <button className="custom__button"> 🤝 Invite</button>
       <div>
         <img src={images.calendar} alt="" />
       </div>
