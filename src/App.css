@@ -1,8 +1,8 @@
 .App {
   text-align: center;
   background-color: #ede5ff;
-  width: 375px;
-  height: 813px;
+  /* width: 390;
+  height: 844; */
 }
 
 .App-logo {
@@ -17,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #ede5ff;
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -50,9 +50,6 @@
 }
 .buy-now:hover {
   transform: scale(1.1, 1.1);
-}
-.section__padding {
-  padding: 4rem 6rem;
 }
 
 @keyframes App-logo-spin {

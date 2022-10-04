@@ -1,5 +1,6 @@
 import React from "react";
 import { Input, InputLabel } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const CreateForm = () => {
   return (
@@ -29,12 +30,12 @@ const CreateForm = () => {
         </InputLabel>
         <br />
         <InputLabel>
-        Suburb, State and Postcode
-            <Input></Input>
+          Suburb, State and Postcode
+          <Input></Input>
         </InputLabel>
-        <button type="button" className="custom__button">
-          NEXT
-        </button>
+        <Link to="/Event">
+          <button className="custom__button">NEXT</button>
+        </Link>
       </form>
     </div>
   );

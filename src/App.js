@@ -1,28 +1,23 @@
-// import logo from './logo.svg';
-import Header from "./components/Header/Header";
-import Landing from "./components/landing/Landing";
-import Button from "./components/Button/Button";
+// import logo from "./logo.svg";
 import "./App.css";
-import UrlBar from "./components/URLbar/Urlbar";
-import Event from "./pages/Event";
+// import { Landing, UrlBar, Button, Header } from "./components";
 import { Route, Routes } from "react-router-dom";
-import CreateForm from "./pages/CreateForm";
-import NotFound from "./pages/NotFound";
+import { Create, Event, Home } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <Landing />
       <Button />
-      <UrlBar />
-      {/* <Routes>
-        <Route path="create" element={<CreateForm />} />
-        <Route path="event" element={<Event />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes> */}
-      <CreateForm/>
-      <Event />
+      <br />
+      <UrlBar /> */}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/event" element={<Event />} />
+      </Routes>
     </div>
   );
 }

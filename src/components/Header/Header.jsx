@@ -1,19 +1,21 @@
-import React from 'react'
-import './Header.css'
+import React from "react";
+import images from "../../constants/images";
+import "./Header.css";
 
 const header = () => {
   return (
-    <div className="">
-    <div className='App__header-content'>
-    <h1> Imagine if </h1>
-    <h1 className='gradient__text'> Snapchat</h1>
-    <h1>had events.</h1>
-    <h2>Easily host and share events with your friends across any social media.</h2>
-
+    <div className="app__phone-info">
+      <br />
+      {/* <div>
+      9:41
+    </div> */}
+      <div className="app__phone-statusbar">
+        <img src={images.mobileSignal} alt="" />
+        <img src={images.wifi} alt="" />
+        <img src={images.battery} alt="" />
+      </div>
     </div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default header
+export default header;
